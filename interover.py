@@ -1,7 +1,6 @@
-#!/usr/bin/python3
 import sys
 def allsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -23,7 +22,7 @@ def allsprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def bebisprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -42,7 +41,7 @@ def bebisprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def fikonsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -64,7 +63,7 @@ def fikonsprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def overrovarsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	i = 0
@@ -78,7 +77,7 @@ def overrovarsprak(inrad):
 			i -= 1
 	return utr
 def rovarsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	for s in inrad:
@@ -90,7 +89,7 @@ def rovarsprak(inrad):
 			utr += s
 	return utr
 def visksprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	for s in inrad:
@@ -98,27 +97,27 @@ def visksprak(inrad):
 			utr += s
 	return utr
 while True:
-	arg = input ('Vilket sprak onskas?\n1 Visk 2 Rovar 3 Bebis\n4 All 5 Fikon 6 Avsluta programmet\n\n')
+	arg = input ('Vilket språk önskas?\n1 Visk 2 Rövar 3 Bebis\n4 All 5 Fikon 6 Avsluta programmet\n\n')
 	if arg=='4':
 		test = input ('Din mening: ')
-		print ('Allspraket: ',allsprak(test),'\n')
-		continue	
+		print ('Allspråket: ',allsprak(test),'\n')
+		continue
 	elif arg=='3':
 		test = input ('Din mening: ')
-		print ('Bebispraket: ',bebisprak(test),'\n')
-		continue	
+		print ('Bebispråket: ',bebisprak(test),'\n')
+		continue
 	elif arg=='5':
 		test = input ('Din mening: ')
-		print ('Fikonspraket: ',fikonsprak(test),'\n')
-		continue	
+		print ('Fikonspråket: ',fikonsprak(test),'\n')
+		continue
 	elif arg=='2':
 		test = input ('Din mening: ')
-		print ('Rovarspraket: ',rovarsprak(test),'\n')
-		continue	
+		print ('Rövarspråket: ',rovarsprak(test),'\n')
+		continue
 	elif arg=='1':
 		test = input ('Din mening: ')
-		print ('Viskspraket: ',visksprak(test),'\n')
-		continue	
+		print ('Viskspråket: ',visksprak(test),'\n')
+		continue
 	elif arg=='6':
 		break
 	else:
