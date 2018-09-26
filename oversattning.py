@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 def allsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -23,7 +23,7 @@ def allsprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def bebisprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -42,7 +42,7 @@ def bebisprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def fikonsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	j = 0
@@ -64,7 +64,7 @@ def fikonsprak(inrad):
 	utr = ' '.join(aa)
 	return utr
 def overrovarsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	i = 0
@@ -78,7 +78,7 @@ def overrovarsprak(inrad):
 			i -= 1
 	return utr
 def rovarsprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	for s in inrad:
@@ -90,7 +90,7 @@ def rovarsprak(inrad):
 			utr += s
 	return utr
 def visksprak(inrad):
-	vokaler = 'aouaeiyaoAOUaEIYao'
+	vokaler = 'aouåeiyäöAOUÅEIYÄÖ'
 	konsonanter = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 	utr = ""
 	for s in inrad:
@@ -102,10 +102,9 @@ for arg in sys.argv[1:]:
 	if arg=='-h':
 		print ('\nThe program translates the sentence to different languages')
 		print ('Use parameters:')
-		print ('-a allspraket, -b bebispraket, -f fikonspraket, -r rovarspraket, -o overrovarspraket, -v viskspraket')
+		print ('-a allspråket, -b bebispråket, -f fikonspråket, -r rövarspråket, -o överrövarspråket, -v viskspråket')
 		print ('The example of usage:')
-		print ('> echo This frase I want to translate | oversattning.py -r')
-		print ('translates to rovarspraket. You can also type')
+		print ('To translate to rövarspråket you can type')
 		print ('> oversattning.py -r')
 		print ('and input the sentence to translate below')
 	elif arg=='-a':
